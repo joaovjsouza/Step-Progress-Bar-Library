@@ -12,9 +12,18 @@ class MainActivity : AppCompatActivity() {
 
         val progressbar = binding.stepProgressBar
 
-        progressbar.progressBackground = R.drawable.custom_progress_bg
+//        progressbar.state.steps =
+//            mutableListOf("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado")
 
-        progressbar.state.steps = mutableListOf("Começo", "Fim")
-        progressbar.state.actualProgress = 1
+        val btnNext = binding.btnNextStep
+        val btnPrevious = binding.btnPreviousStep
+
+        btnNext.setOnClickListener {
+            progressbar.state.increment()
+        }
+
+        btnPrevious.setOnClickListener {
+            progressbar.state.decrement()
+        }
     }
 }

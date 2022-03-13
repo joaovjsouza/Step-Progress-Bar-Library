@@ -28,7 +28,6 @@ class StepProgressBar @JvmOverloads constructor(
             value?.let {
                 field = it
                 binding.progressBar.progressDrawable = context.getDrawable(it)
-                refreshState()
             }
         }
 
@@ -49,10 +48,4 @@ class StepProgressBar @JvmOverloads constructor(
             tvStepIndexMargin.horizontal = 30
         }
     }
-
-    private fun refreshState() {
-
-    }
-
-
 }
