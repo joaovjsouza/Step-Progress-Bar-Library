@@ -16,6 +16,6 @@
 
 	dependencies {
            def version = "1.0.0"
-	       implementation 'com.github.joaovjsouza:Step-Progress-Bar-Library:$version'
+	       implementation "com.github.joaovjsouza:Step-Progress-Bar-Library:$version"
 	}
   
